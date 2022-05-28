@@ -4,6 +4,7 @@
 #include "bubblesort.h"
 #include "insertionsort.h"
 #include "selectionsort.h"
+#include "quicksort.h"
 
 void printarray(int arr[], int size) {
   for (int i = 0;i < size; i++) {
@@ -31,5 +32,10 @@ int main() {
   selectionsort(arr3, sizeof(arr3) / sizeof(arr3[0]));
   printarray(arr3, sizeof(arr3) / sizeof(arr3[0]));
 
+  printf("QuickSort\n");
+  int arr4[] = {6, 4, 3, 7, 2, 9, 1, 5};
+  printarray(arr4, sizeof(arr4) / sizeof(arr4[0]));
+  quicksort(arr4, sizeof(arr4) / sizeof(arr4[0]));
+  printarray(arr4, sizeof(arr4) / sizeof(arr4[0]));
   return 0;
 }
