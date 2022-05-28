@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include "bubblesort.h"
+#include "insertionsort.h"
 
 void printarray(int arr[], int size) {
   for (int i = 0;i < size; i++) {
@@ -15,6 +16,11 @@ int main() {
 
   printarray(arr, sizeof(arr) / sizeof(arr[0]));
   bubblesort(arr, sizeof(arr) / sizeof(arr[0]));
-  
   printarray(arr, sizeof(arr) / sizeof(arr[0]));
+  
+  int arr2[] = {6, 4, 3, 7, 2, 9, 1, 5};
+  printarray(arr2, sizeof(arr2) / sizeof(arr2[0]));
+  insertionsort(arr2, sizeof(arr2) / sizeof(arr2[0]));
+  printarray(arr2, sizeof(arr2) / sizeof(arr2[0]));
+  
 }
