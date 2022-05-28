@@ -14,4 +14,7 @@ int main() {
   int arr[] = {6, 4, 3, 7, 2, 9, 1, 5};
 
   printarray(arr, sizeof(arr) / sizeof(arr[0]));
+  bubblesort(arr, sizeof(arr) / sizeof(arr[0]));
+  
+  printarray(arr, sizeof(arr) / sizeof(arr[0]));
 }
